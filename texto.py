@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-script_code = """import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 
 url = "https://libreriamorelos.mx/top100/index.html"
 response = requests.get(url)
@@ -37,7 +34,3 @@ for libro in libros:
 df = pd.DataFrame(datos)
 df.to_csv("top_librosmorelos.csv", index=False)
 print("Scraping exitoso y archivo top_librosmorelos.csv creado.")
-"""
-
-with open("texto.py", "w", encoding="utf-8") as f:
-    f.write(script_code)
