@@ -34,3 +34,7 @@ for libro in libros:
 df = pd.DataFrame(datos)
 df.to_csv("top_librosmorelos.csv", index=False)
 print("Scraping exitoso y archivo top_librosmorelos.csv creado.")
+
+
+with open("texto.py", "w", encoding="utf-8") as f:
+    f.write(script_code)
